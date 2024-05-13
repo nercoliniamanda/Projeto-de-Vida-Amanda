@@ -1,0 +1,167 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+
+:root {
+  --cor-de-fundo: #1e1e1e;
+  --cinza: #bfbe9f;
+  --branco: #fff;
+  --botao-ativo: #0e0a38;
+  --botao-inativo: rgba(58, 55, 94, 0.5);
+  --texto-fundo: rgb(0, 0, 0, 0.3);
+}
+
+body {
+  background-image: url("foto-fundo.jpg");
+  background-repeat: no-repeat;
+  color: var(--branco);
+  font-family: "Concert One", sans-serif;
+}
+
+.conteudo-principal {
+  display: flex;
+  justify-content: center;
+  align-items: left;
+  flex-direction: column;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1280px;
+}
+
+.titulo-principal {
+  text-align: left;
+  width: 70%;
+  font-size: 2rem;
+}
+
+.titulo-principal span {
+  color: var(--cinza);
+}
+
+.botao {
+  background-color: var(--botao-inativo);
+  color: var(--branco);
+  font-size: 1.1rem;
+  padding: 1rem;
+  font-family: "Protest Riot", sans-serif;
+  display: flex;
+  width: 100%;
+  border-bottom: 4px solid var(--botao-ativo);
+  border-left: 2px solid var(--botao-ativo);
+  border-right: 2px solid var(--botao-ativo);
+  border-top: none;
+}
+
+.botao:first-child {
+  border-radius: 2rem 0 0 0;
+}
+
+.botoes {
+  display: block;
+}
+
+.botao.ativo {
+  background-color: var(--botao-ativo);
+  border-bottom: 4px solid var(--cinza);
+}
+
+.abas-conteudo.ativo {
+  display: block;
+}
+
+.abas-conteudo {
+  display: none;
+}
+
+.abas-texto {
+  background-color: var(--texto-fundo);
+  padding: 40px;
+  border-radius: 0 0 2rem 2rem;
+}
+
+.abas-conteudo-titulo-principal {
+  font-family: "Dancing Script", cursive;
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.abas-conteudo-titulo-secundario {
+  font-family: "Concert One", sans-serif;
+  text-align: center;
+  color: var(--cinza);
+}
+
+.contador {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.digitos {
+  text-align: center;
+  padding: 0 1rem;
+  min-width: 6rem;
+}
+
+.digito-numero {
+  font-family: "Dancing Script", cursive;
+  font-size: 5rem;
+  margin: 0;
+}
+
+.digito-texto {
+  font-family: "Concert One", sans-serif;
+  color: var(--cinza);
+  font-size: 1.1rem;
+  margin: 0;
+}
+
+@media screen and (min-width: 768px) {
+  .botoes {
+    display: flex;
+  }
+
+  .botao:last-child {
+    border-radius: 0 2rem 0 0;
+  }
+}
+
+rodape {
+  margin-top: 6rem;
+  background-color: var(--fundo-secundaria);
+}
+
+.rodape-icones {
+  padding: 2rem;
+  text-align: center;
+  font-size: 2rem;
+}
+
+.rodape-icones i {
+  margin-right: 1rem;
+}
+
+.rodape-icones i:hover {
+  color: var(--principal);
+}
+
+.rodape-icones i:active {
+  color: #43ffff;
+}
+
+.rodape-credito {
+  padding: 2rem;
+  text-align: center;
+  font-size: 1rem;
+  border-top: 0.1rem solid var(--branco);
+  margin-top: 10rem;
+}
+
+.rodape-credito span {
+  color: var(--principal);
+}
+
+.fases {
+  margin: 0;
+}
